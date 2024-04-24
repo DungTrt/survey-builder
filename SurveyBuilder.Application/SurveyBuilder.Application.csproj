@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Validators\Account\" />
+    <Folder Include="Validators\AccountRole\" />
+    <Folder Include="Validators\AccountSurvey\" />
+    <Folder Include="Validators\AccountSurveyAnswer\" />
+    <Folder Include="Validators\Answer\" />
+    <Folder Include="Validators\Bills\" />
+    <Folder Include="Validators\UploadBillHistory\" />
+    <Folder Include="Validators\UploadAnswerHistory\" />
+    <Folder Include="Validators\SystemConfig\" />
+    <Folder Include="Validators\Survey\" />
+    <Folder Include="Validators\RolePermission\" />
+    <Folder Include="Validators\Role\" />
+    <Folder Include="Validators\QuestionType\" />
+    <Folder Include="Validators\Question\" />
+    <Folder Include="Validators\Permission\" />
+    <Folder Include="Validators\OrderStatus\" />
+    <Folder Include="Validators\Orders\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SurveyBuilder.Core\SurveyBuilder.Core.csproj" />
+    <ProjectReference Include="..\SurveyBuilder.Domain\SurveyBuilder.Domain.csproj" />
+    <ProjectReference Include="..\SurveyBuilder.Infrastructure\SurveyBuilder.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
